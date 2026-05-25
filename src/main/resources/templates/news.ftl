@@ -28,8 +28,8 @@
             <div class="card-footer">
                 <span class="news-creator"></span>
                 <span class="news-read"></span>
-                <span class="news-date"></span>
             </div>
+            <span class="news-date"></span>
         </div>
     </article>
 </template>
