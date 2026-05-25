@@ -3,7 +3,7 @@
 뉴스 카테고리 선택 > 기사 리스트 > 기사 본문 흐름으로 이어지는 웹 애플리케이션입니다.
 
 - Frontend: Freemarker (SSR), HTML/CSS, jQuery
-- Backend: Spring Boot
+- Backend: Spring Boot 3.2.8, Java 17
 - 데이터베이스: SQLite (news.db)
 
 `git branch : master , develop(default) , features/News-01(작업 브랜치) 중 소스와 readme.md는 develop 브랜치 확인 부탁드립니다.`
