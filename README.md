@@ -16,11 +16,11 @@
 
 ### 2) 기사 리스트 (http://localhost:8081/news?categoryId=)
 <img width="2180" height="1490" alt="2-1  카테고리별 기사 리스트 화면" src="https://github.com/user-attachments/assets/1dd6b556-a14e-43ff-99a6-adba77c0f8a3" />
- - 기사 제목, 작성자, 발행 시간, 읽음/읽지 않음 표시
- - '홈으로 이동하기' 버튼 클릭 시 1) 화면으로 이동
+- 기사 제목, 작성자, 발행 시간, 읽음/읽지 않음 표시
+- '홈으로 이동하기' 버튼 클릭 시 1) 화면으로 이동
 
  - 읽음 표시
-   <img width="726" height="370" alt="image" src="https://github.com/user-attachments/assets/55ced959-5f42-48f2-b0bd-db671dc694dd" />
+<img width="726" height="370" alt="image" src="https://github.com/user-attachments/assets/55ced959-5f42-48f2-b0bd-db671dc694dd" />
 
 
 
