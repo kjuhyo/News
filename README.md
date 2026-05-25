@@ -26,11 +26,11 @@
 
 ### 3) 기사 본문
 <img width="2144" height="1492" alt="3  본문 페이지_(기사 타이틀 클릭시 새 탭이동)" src="https://github.com/user-attachments/assets/39c614ed-622c-4e7b-b405-e50001e3b63a" />
- - 2)에서 기사 제목 클릭 > 새 탭에서 기사 본문 출력
+- 2)에서 기사 제목 클릭 > 새 탭에서 기사 본문 출력
 
 ### 공통 에러페이지
 <img width="1722" height="1254" alt="공통_에러페이지" src="https://github.com/user-attachments/assets/7d983203-b377-423d-947d-3ac5d10cd388" />
- - 예기치 못한 에러 발생 시 출력 페이지
+- 예기치 못한 에러 발생 시 출력 페이지
 
 ## 구현
 ### Frontend + Backend (SSR-PageController)
