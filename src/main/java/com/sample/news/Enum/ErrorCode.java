@@ -6,9 +6,10 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public enum ErrorCode {
-
-    NOT_FOUND_ARTICLE(10001, "게시글이 존재하지 않습니다."),
-    INTERNAL_SERVER_ERROR(10002, "서버 내부 오류입니다.");
+    UNKNOWN(10000, "알 수 없는 에러"),
+    NEWS_NOT_FOUND(10001, "뉴스 조회 실패"),
+    CATEGORIES_NOT_FOUND(10002, "카테고리 조회 실패"),
+    READ_LOG_CREATE_FAILED(10003, "읽음 로그 생성 실패");
 
     private final Integer code;
     private final String message;

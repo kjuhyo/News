@@ -35,7 +35,7 @@ public class CategoriesService {
         } catch (ErrorException e) {
             Map<String, Object> logData = new HashMap<>();
             logData.put("categoryId", categoryId);
-            throw new ErrorException(ErrorCode.INTERNAL_SERVER_ERROR, logData);
+            throw new ErrorException(ErrorCode.CATEGORIES_NOT_FOUND, logData);
         }
     }
 
@@ -53,7 +53,7 @@ public class CategoriesService {
                     ))
                     .toList();
         } catch (ErrorException e) {
-            throw new ErrorException(ErrorCode.INTERNAL_SERVER_ERROR, null);
+            throw new ErrorException(ErrorCode.CATEGORIES_NOT_FOUND, null);
         }
     }
 }

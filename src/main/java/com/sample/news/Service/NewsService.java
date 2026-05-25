@@ -66,7 +66,7 @@ public class NewsService {
         } catch (ErrorException e) {
             Map<String, Object> logData = new HashMap<>();
             logData.put("rssUrl", rssUrl);
-            throw new ErrorException(ErrorCode.INTERNAL_SERVER_ERROR, logData);
+            throw new ErrorException(ErrorCode.NEWS_NOT_FOUND, logData);
         }
     }
 
@@ -80,7 +80,7 @@ public class NewsService {
         } catch (ErrorException e) {
             Map<String, Object> logData = new HashMap<>();
             logData.put("articleId", articleId);
-            throw new ErrorException(ErrorCode.INTERNAL_SERVER_ERROR, logData);
+            throw new ErrorException(ErrorCode.READ_LOG_CREATE_FAILED, logData);
         }
     }
 }
