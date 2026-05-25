@@ -17,8 +17,8 @@ public class NewsController {
     private final CategoriesService categoriesService;
     private final NewsService newsService;
 
-    @GetMapping("/{id}")
-    public List<NewsDto> news(@PathVariable("id") Integer categoryId) throws Exception {
+    @GetMapping("/{categoryId}")
+    public List<NewsDto> news(@PathVariable Integer categoryId) throws Exception {
         var url = categoriesService.get(categoryId).getRssUrl();
 
         return newsService.getNewsList(url);
