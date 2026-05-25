@@ -6,6 +6,8 @@
 - Backend: Spring Boot
 - 데이터베이스: SQLite (news.db)
 
+`git branch : master , develop(default) , features/News-01(작업 브랜치) 중 소스와 readme.md는 develop 브랜치 확인 부탁드립니다.`
+
 ## 화면 구성
 ### 1) 뉴스 카테고리 선택 (http://localhost:8081/home)
 <img width="1712" height="1256" alt="1-1  카테고리 선택화면" src="https://github.com/user-attachments/assets/9b89a34b-41ad-482e-9a94-d305d974e148" />
@@ -66,6 +68,9 @@
 ## 실행
 Frontend, Backend, DB 모두 하나의 서버에 있으므로 각각 실행 불필요함. 해당 app만 실행 
 - gradle > Tasks > application > bootRun
+
+> 개발 시 생성형 AI(chat gpt, gemini) 활용하였으며, 마크업 (html, css, jquery) 작업 위주로 사용하였습니다.
+> Backend는 설계 검증 용도와 디버깅 용도 위주로 사용하였습니다.
 
 
 
