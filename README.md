@@ -16,8 +16,9 @@
 
 ### 2) 기사 리스트 (http://localhost:8081/news?categoryId=)
 <img width="2180" height="1490" alt="2-1  카테고리별 기사 리스트 화면" src="https://github.com/user-attachments/assets/1dd6b556-a14e-43ff-99a6-adba77c0f8a3" />
-- 기사 제목, 작성자, 발행 시간, 읽음/읽지 않음 표시
-- '홈으로 이동하기' 버튼 클릭 시 1) 화면으로 이동
+ - 기사 제목, 작성자, 발행 시간, 읽음/읽지 않음 표시
+ - '홈으로 이동하기' 버튼 클릭 시 1) 화면으로 이동
+
 
  - 읽음 표시
 <img width="726" height="370" alt="image" src="https://github.com/user-attachments/assets/55ced959-5f42-48f2-b0bd-db671dc694dd" />
@@ -26,11 +27,11 @@
 
 ### 3) 기사 본문
 <img width="2144" height="1492" alt="3  본문 페이지_(기사 타이틀 클릭시 새 탭이동)" src="https://github.com/user-attachments/assets/39c614ed-622c-4e7b-b405-e50001e3b63a" />
-- 2)에서 기사 제목 클릭 > 새 탭에서 기사 본문 출력
+ - 2)에서 기사 제목 클릭 > 새 탭에서 기사 본문 출력
 
 ### 공통 에러페이지
 <img width="1722" height="1254" alt="공통_에러페이지" src="https://github.com/user-attachments/assets/7d983203-b377-423d-947d-3ac5d10cd388" />
-- 예기치 못한 에러 발생 시 출력 페이지
+ - 예기치 못한 에러 발생 시 출력 페이지
 
 ## 구현
 ### Frontend + Backend (SSR-PageController)
