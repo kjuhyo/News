@@ -1,0 +1,182 @@
+/* 1. 디자인 기본 세팅 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333333;
+    padding: 50px 20px;
+    line-height: 1.6;
+}
+
+/* 2. 전체 레이아웃 틀 */
+.news-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.news-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.news-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.news-subtitle {
+    color: #666666;
+    font-size: 1rem;
+}
+
+/* 3. 뉴스 카드 격자(Grid) 배열 */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 28px;
+}
+
+/* 4. 뉴스 카드 개별 디자인 */
+.news-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eaeaea;
+}
+
+/* 마우스 올렸을 때 살짝 뜨는 효과 */
+.news-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-content {
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* 뉴스 제목 스타일 */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+.card-title a {
+    color: #111111;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.card-title a:hover {
+    color: #1c7ed6; /* 호버 시 세련된 블루 컬러 강조 */
+}
+
+/* 뉴스 본문 요약 (3줄 제한 및 말줄임표 처리) */
+.card-description {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 26px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 5. 카드 하단 바 (기자 정보 & 발행일) */
+.card-footer {
+    margin-top: auto; /* 본문이 짧아도 푸터는 무조건 카드 맨 아래 정렬 */
+    padding-top: 14px;
+    border-top: 1px solid #f1f3f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #868e96;
+}
+
+.news-creator {
+    font-weight: 600;
+    color: #495057;
+}
+
+.news-date {
+    letter-spacing: -0.2px;
+}
+
+/* 상단 헤더 */
+.top-bar {
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto 20px auto;
+
+    display: flex;
+    align-items: center;
+    /* justify-content를 space-between으로 유지하여 좌우 끝 정렬 보장 */
+    justify-content: space-between;
+
+    padding: 0 10px;
+}
+
+/* 홈 버튼 (흐린 하늘색 톤으로 커스텀) */
+.home-btn {
+    text-decoration: none;
+
+    background: #e8f4fd; /* 연하고 산뜻한 파스텔 하늘색 배경 */
+    color: #1c7ed6;      /* 대비를 주는 진한 하늘색 글자 */
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+
+    box-shadow: 0 4px 12px rgba(28, 126, 214, 0.08);
+
+    /* flex 컨테이너 내에서 왼쪽 여백을 auto로 설정하면,
+       남은 공간을 모두 왼쪽에 배치하여 이 버튼을 완전히 오른쪽 끝으로 밀어냅니다.
+    */
+    margin-left: auto;
+}
+
+/* hover */
+.home-btn:hover {
+    background: #d0ebff; /* 마우스를 올렸을 때 살짝 더 선명한 파스텔톤 하늘색 */
+    color: #1864ab;      /* 글자 색상도 한 단계 어둡게 조절하여 시인성 확보 */
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 16px rgba(28, 126, 214, 0.15);
+}
+
+/* 제목 */
+.page-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #212529;
+}
+
+/* 읽음 상태 (파란색으로 변경) */
+.news-read.is-read {
+    color: #1c7ed6; /* 세련된 파란색 */
+    background-color: #e8f4fd; /* 흐린 하늘색 배경 */
+}
