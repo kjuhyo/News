@@ -19,8 +19,9 @@
  - 기사 제목, 작성자, 발행 시간, 읽음/읽지 않음 표시
  - '홈으로 이동하기' 버튼 클릭 시 1) 화면으로 이동
 
- - 읽음 표시   
-<img width="2228" height="1498" alt="2-2  카테고리별 기사 리스트 화면_(읽음 표시)" src="https://github.com/user-attachments/assets/952d9ec1-4e5a-409d-b969-dd83df56ce57" />
+ - 읽음 표시
+   <img width="726" height="370" alt="image" src="https://github.com/user-attachments/assets/55ced959-5f42-48f2-b0bd-db671dc694dd" />
+
 
 
 ### 3) 기사 본문
@@ -33,8 +34,8 @@
 
 ## 구현
 ### Frontend + Backend (SSR-PageController)
-- ftl 파일에 마크업 구성
--   src/main/resources/static, src/main/resources/templates 디렉토리 참고
+- ftl 파일 마크업 구성
+  `src/main/resources/static, src/main/resources/templates 디렉토리 하위`
 - PageController에서 Model에 담을 값 세팅 및 전달
 - 페이지 렌더링
 
@@ -60,7 +61,7 @@
 
 
 ## 실행
-Frontend, Backend, DB 모두 하나의 서버에 있으므로 각각 실행 불필요하고, 해당 app만 실행 
+Frontend, Backend, DB 모두 하나의 서버에 있으므로 각각 실행 불필요함. 해당 app만 실행 
 - gradle > Tasks > application > bootRun
 
 
