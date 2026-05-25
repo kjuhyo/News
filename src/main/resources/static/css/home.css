@@ -1,0 +1,83 @@
+/* 1. 기본 스타일 리셋 및 폰트 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 2. 전체를 감싸는 컨테이너 */
+.container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #111111;
+    letter-spacing: -0.5px;
+}
+
+/* 3. 카테고리 버튼들을 감싸는 박스 (Grid 레이아웃) */
+.category-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    color: #868e96;
+    font-size: 0.95rem;
+}
+
+/* 4. 카테고리 개별 버튼 스타일 */
+.category-btn {
+    background-color: #f1f3f5;
+    color: #495057;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 14px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+
+    /* 글자가 너무 길어지면 말줄임표(...) 처리 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 5. 버튼에 마우스를 올렸을 때 (Hover) */
+.category-btn:hover {
+    background-color: #e8f2ff;
+    color: #1c7ed6;
+    border-color: #a5d8ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(28, 126, 214, 0.15);
+}
+
+/* 6. 버튼을 클릭하는 순간 (Active) */
+.category-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+    background-color: #d0ebff;
+}
